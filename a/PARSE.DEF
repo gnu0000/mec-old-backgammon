@@ -1,0 +1,7 @@
+DEFINITION MODULE Parse;
+
+FROM Types IMPORT DiceRec,BoardType;
+
+PROCEDURE ParseMove(S:ARRAY OF CHAR;VAR q:DiceRec);
+
+END Parse.

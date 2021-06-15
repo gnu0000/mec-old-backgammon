@@ -1,0 +1,7 @@
+all:
+ premake /AddDot backgamm.bug backgamm
+ nmake -f backgamm
+
+deliver:
+ premake /AddDot backgamm.dlv backgamm
+ nmake -f backgamm

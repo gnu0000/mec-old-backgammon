@@ -1,0 +1,13 @@
+DEFINITION MODULE Heuristics;
+
+(* Heuristics by:  *)
+(* Craig           *) 
+(* Bhovani         *) 
+(* Rhagiv          *) 
+
+
+FROM Types IMPORT BoardType;
+
+PROCEDURE CalculateBoardValue(TempBoard:BoardType;VAR Val: INTEGER);
+
+END Heuristics.

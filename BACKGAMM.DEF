@@ -1,0 +1,5 @@
+NAME         BACKGAMM WINDOWCOMPAT NEWFILES
+DESCRIPTION  'Backgammon. (C) 1993 Info Tech Inc.'  
+HEAPSIZE     2048                 
+STACKSIZE    10240                
+EXETYPE      OS2            

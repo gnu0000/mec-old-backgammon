@@ -1,0 +1,21 @@
+
+all : backgamm.exe
+
+
+
+
+backgamm.obj : backgamm.c  Backgamm.h
+   cl /W3 /c /AL /Od /Zip /nologo /DEBS_DEBUG $*.c
+
+display.obj : display.c  Backgamm.h
+   cl /W3 /c /AL /Od /Zip /nologo /DEBS_DEBUG $*.c
+
+logic.obj : logic.c  backgamm.h
+   cl /W3 /c /AL /Od /Zip /nologo /DEBS_DEBUG $*.c
+
+parse.obj : parse.c  Backgamm.h
+   cl /W3 /c /AL /Od /Zip /nologo /DEBS_DEBUG $*.c
+
+backgamm.exe : backgamm.obj display.obj logic.obj parse.obj 
+  link backgamm.obj display.obj logic.obj parse.obj /CO/NOLOGO,,NUL,os2 Gnubugl llibcep/NOD/NOE,$*.def
+
